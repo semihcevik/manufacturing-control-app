@@ -1,0 +1,122 @@
+/* src/styles/PlaneManufacturing.css */
+
+.plane-manufacturing {
+  padding: 20px;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  max-width: 100%; /* Allow the container to occupy up to 75% of the screen width */
+  margin: 20px auto;
+  text-align: center;
+  width: 100%; /* Ensure the container takes up the full available width */
+}
+
+.plane-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.plane-table th,
+.plane-table td {
+  border: 1px solid #444;
+  padding: 10px;
+  font-size: 1em;
+}
+
+.plane-table th {
+  background-color: #333;
+}
+
+.plane-table tr:nth-child(even) {
+  background-color: #2e2e2e;
+}
+
+.action-btn {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  margin-right: 5px;
+  font-size: 1em;
+}
+
+.action-btn:hover {
+  color: #0056b3;
+}
+
+/* Modal styling */
+.modal {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 90%;
+  margin: auto;
+  color: #ffffff;
+  text-align: center;
+}
+
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .plane-manufacturing {
+      max-width: 90%; /* Increase max width for smaller screens */
+      padding: 15px;
+  }
+
+  .plane-table th,
+  .plane-table td {
+      font-size: 0.9em;
+      padding: 8px;
+  }
+
+  .action-btn {
+      font-size: 0.9em;
+  }
+
+  .modal {
+      width: 95%;
+      padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .plane-manufacturing {
+      max-width: 100%; /* Full width for very small screens */
+      padding: 10px;
+  }
+
+  .plane-table th,
+  .plane-table td {
+      font-size: 0.8em;
+      padding: 6px;
+  }
+
+  .action-btn {
+      font-size: 0.8em;
+  }
+
+  .modal {
+      width: 90%;
+      padding: 10px;
+  }
+}
