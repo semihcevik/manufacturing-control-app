@@ -1,0 +1,277 @@
+[
+    {
+        "model": "departments.Departments",
+        "pk": 1,
+        "fields": {
+            "name": "Wing Team"
+        }
+    },
+    {
+        "model": "departments.Departments",
+        "pk": 2,
+        "fields": {
+            "name": "Body Team"
+        }
+    },
+    {
+        "model": "departments.Departments",
+        "pk": 3,
+        "fields": {
+            "name": "Tail Team"
+        }
+    },
+    {
+        "model": "departments.Departments",
+        "pk": 4,
+        "fields": {
+            "name": "Avionics Team"
+        }
+    },
+    {
+        "model": "departments.Departments",
+        "pk": 5,
+        "fields": {
+            "name": "Assembly Team"
+        }
+    },
+    {
+        "model": "parts.Parts",
+        "pk": 1,
+        "fields": {
+            "name": "Wing",
+            "department": 1
+        }
+    },
+    {
+        "model": "parts.Parts",
+        "pk": 2,
+        "fields": {
+            "name": "Body",
+            "department": 2
+        }
+    },
+    {
+        "model": "parts.Parts",
+        "pk": 3,
+        "fields": {
+            "name": "Tail",
+            "department": 3
+        }
+    },
+    {
+        "model": "parts.Parts",
+        "pk": 4,
+        "fields": {
+            "name": "Avionics",
+            "department": 4
+        }
+    },
+    {
+        "model": "planes.Planes",
+        "pk": 1,
+        "fields": {
+            "name": "TB2",
+            "required_parts": "(1, 2, 3, 4)"
+        }
+    },
+    {
+        "model": "planes.Planes",
+        "pk": 2,
+        "fields": {
+            "name": "TB3",
+            "required_parts": "(1, 2, 3, 4)"
+        }
+    },
+    {
+        "model": "planes.Planes",
+        "pk": 3,
+        "fields": {
+            "name": "AKINCI",
+            "required_parts": "(1, 2, 3, 4)"
+        }
+    },
+    {
+        "model": "planes.Planes",
+        "pk": 4,
+        "fields": {
+            "name": "KIZILELMA",
+            "required_parts": "(1, 2, 3, 4)"
+        }
+    },
+    {
+        "model": "parts.PartsInventory",
+        "pk": 1,
+        "fields": {
+            "plane": 1,
+            "part": 1,
+            "inventory": 100
+        }
+    },
+    {
+        "model": "parts.PartsInventory",
+        "pk": 2,
+        "fields": {
+            "plane": 1,
+            "part": 2,
+            "inventory": 100
+        }
+    },
+    {
+        "model": "parts.PartsInventory",
+        "pk": 3,
+        "fields": {
+            "plane": 1,
+            "part": 3,
+            "inventory": 100
+        }
+    },
+    {
+        "model": "parts.PartsInventory",
+        "pk": 4,
+        "fields": {
+            "plane": 1,
+            "part": 4,
+            "inventory": 100
+        }
+    },
+    {
+        "model": "parts.PartsInventory",
+        "pk": 5,
+        "fields": {
+            "plane": 2,
+            "part": 1,
+            "inventory": 0
+        }
+    },
+    {
+        "model": "parts.PartsInventory",
+        "pk": 6,
+        "fields": {
+            "plane": 2,
+            "part": 2,
+            "inventory": 100
+        }
+    },
+    {
+        "model": "parts.PartsInventory",
+        "pk": 7,
+        "fields": {
+            "plane": 2,
+            "part": 3,
+            "inventory": 100
+        }
+    },
+    {
+        "model": "parts.PartsInventory",
+        "pk": 8,
+        "fields": {
+            "plane": 2,
+            "part": 4,
+            "inventory": 100
+        }
+    },
+    {
+        "model": "parts.PartsInventory",
+        "pk": 9,
+        "fields": {
+            "plane": 3,
+            "part": 1,
+            "inventory": 100
+        }
+    },
+    {
+        "model": "parts.PartsInventory",
+        "pk": 10,
+        "fields": {
+            "plane": 3,
+            "part": 2,
+            "inventory": 100
+        }
+    },
+    {
+        "model": "parts.PartsInventory",
+        "pk": 11,
+        "fields": {
+            "plane": 3,
+            "part": 3,
+            "inventory": 100
+        }
+    },
+    {
+        "model": "parts.PartsInventory",
+        "pk": 12,
+        "fields": {
+            "plane": 3,
+            "part": 4,
+            "inventory": 0
+        }
+    },
+    {
+        "model": "parts.PartsInventory",
+        "pk": 13,
+        "fields": {
+            "plane": 4,
+            "part": 1,
+            "inventory": 100
+        }
+    },
+    {
+        "model": "parts.PartsInventory",
+        "pk": 14,
+        "fields": {
+            "plane": 4,
+            "part": 2,
+            "inventory": 100
+        }
+    },
+    {
+        "model": "parts.PartsInventory",
+        "pk": 15,
+        "fields": {
+            "plane": 4,
+            "part": 3,
+            "inventory": 100
+        }
+    },
+    {
+        "model": "parts.PartsInventory",
+        "pk": 16,
+        "fields": {
+            "plane": 4,
+            "part": 4,
+            "inventory": 100
+        }
+    },
+    {
+        "model": "planes.PlanesInventory",
+        "pk": 1,
+        "fields": {
+            "plane": 1,
+            "inventory": 20
+        }
+    },
+    {
+        "model": "planes.PlanesInventory",
+        "pk": 2,
+        "fields": {
+            "plane": 2,
+            "inventory": 20
+        }
+    },
+    {
+        "model": "planes.PlanesInventory",
+        "pk": 3,
+        "fields": {
+            "plane": 3,
+            "inventory": 20
+        }
+    },
+    {
+        "model": "planes.PlanesInventory",
+        "pk": 4,
+        "fields": {
+            "plane": 4,
+            "inventory": 20
+        }
+    }
+]
